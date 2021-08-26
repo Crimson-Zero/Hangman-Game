@@ -12,7 +12,7 @@ from hang_man_init import stages
 
 from hang_man_wordlist import word_list
 
-def get_word_blanklist(list_words):
+def get_word_blanklist():
     
     get_word=random.choice(word_list)
     blank_list=[]
@@ -57,7 +57,7 @@ def main():
     
     print(logo)
     print("Welcome to Hangman")
-    [answer,blank]=get_word_blanklist(word_list)
+    [answer,blank]=get_word_blanklist()
     stages.reverse()
     counter=0
     
