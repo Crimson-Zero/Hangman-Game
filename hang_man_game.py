@@ -25,7 +25,7 @@ def get_word_blanklist():
 
 def draw_hang_man(user,word,blank,counter):
     
-    print(word)
+    
     for index,letter in enumerate(word):
         if(user==letter):
             blank[index]=user
